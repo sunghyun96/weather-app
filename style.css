@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(-45deg, rgb(132, 179, 201), rgb(78, 126, 170), rgb(48, 62, 143));
+    background-size: 400% 400%;
+    animation: gradient 10s ease 0s infinite;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+/* @keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+
+.notification {
+    background: rgb(153, 0, 0);
+    height: 20px;
+    display: none;
+}
+
+.notification p {
+    margin: 0;
+    text-align: center;
+}
+
+.location, .temperature {
+    height: 30vh;
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.weather-type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.temperature {
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.degree {
+    display: flex;
+    align-items: center;
+}
+
+.degree span {
+    margin: 10px;
+    font-size: 25px;
+}
+
+.degree h2 {
+    font-size: 40px;
+}
+
+.description-block {
+    display: flex;
+    flex-direction: row;
+}
+

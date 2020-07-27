@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="notification"> </div>
+    <div class="location">
+        <h1 class="location-timezone">Timezone</h1>
+        <div class="weather-type">
+            <img class="weather-icon" src="icons/unknown.png" alt="unknown">
+            <p>Description</p>
+        </div>
+    </div>
+
+    <div class="temperature">
+        <div class="degree">
+            <h2 class="degree-number">--<!-- Replace with temp from API --></h2>
+            <span>°C</span>
+        </div>
+        <div class="description-block">
+            <div class="temperature-description">Feels like:&nbsp;</div>
+            <div class="feels-like-temp">--<!-- feels_like from API --></div>
+            <span>&nbsp;°C</span>
+        </div>
+    </div>
+    
+    <!-- Gradient animation written here in order to always let animation play after changing the gradient properties in the app.js code -->
+    <style id="background-keyframes">
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+    </style>
+    
+    <script src="app.js"></script>
+</body>
+</html>
